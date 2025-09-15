@@ -1,0 +1,233 @@
+/* Estilos Globais */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.container {
+    max-width: 960px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background-color: #ffffff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+/* Estilos para o Cabeçalho com a Logo */
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 20px;
+    text-align: left;
+}
+
+.header-content .header-text {
+    text-align: center;
+    flex-grow: 1;
+}
+
+.header-content .header-text h1,
+.header-content .header-text p {
+    margin: 0;
+    color: #004d40;
+}
+
+.logo {
+    height: 80px;
+    margin-right: 20px;
+}
+
+/* Centraliza o conteúdo principal para telas menores */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .logo {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+/* Seções */
+section {
+    background: #fff;
+    padding: 2rem;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #004d40;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 10px;
+}
+
+/* NOVO ESTILO PARA O MENU DE UNIDADES */
+.unit-nav {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #eaf6ea;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.unit-nav h3 {
+    margin-top: 0;
+    color: #004d40;
+    text-align: center;
+}
+
+.unit-nav ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.unit-nav a {
+    display: block;
+    text-decoration: none;
+    background-color: #ffffff;
+    color: #004d40;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.unit-nav a:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* NOVO ESTILO PARA O QUADRO INFORMATIVO (summary-grid) */
+.summary-section {
+    background: linear-gradient(135deg, #eaf6ea, #dff0df);
+    border-left: 5px solid #004d40;
+}
+
+.summary-section h2 {
+    color: #004d40;
+    border-bottom: 2px solid #004d40;
+}
+
+.summary-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.summary-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.summary-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+.summary-card h3 {
+    margin: 0 0 10px 0;
+    color: #004d40;
+}
+
+.summary-card .value {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.green-text { color: #28a745; }
+.red-text { color: #dc3545; }
+
+/* Tabela de Despesas */
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    text-align: left;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #f2f2f2;
+    color: #555;
+}
+
+.note {
+    font-size: 0.9em;
+    color: #777;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Botões (Links) */
+.report-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.button {
+    display: inline-block;
+    background-color: #00695c;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #004d40;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #333;
+    color: #fff;
+    margin-top: 20px;
+}
+
+/* Estilo para o link de voltar */
+.back-link {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #00695c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
